@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bluedroid"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.EhsanOsama.onthego.MainActivity" >
+
+    <Button
+        android:id="@+id/buttonAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonPhoto"
+        android:layout_alignRight="@+id/buttonPhoto"
+        android:layout_below="@+id/buttonPhoto"
+        android:layout_marginTop="16dp"
+        android:onClick="goToAudioControls"
+        android:text="Record Audio" />
+
+    <Button
+        android:id="@+id/buttonNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonAudio"
+        android:layout_alignRight="@+id/buttonPhoto"
+        android:layout_below="@+id/buttonAudio"
+        android:layout_marginTop="22dp"
+        android:onClick="goToNoteActivity"
+        android:text="Write Note" />
+
+    <Button
+        android:id="@+id/buttonList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonNote"
+        android:layout_alignRight="@+id/buttonNote"
+        android:layout_below="@+id/buttonNote"
+        android:layout_marginTop="16dp"
+        android:onClick="showGrid"
+        android:text="Show History" />
+
+    <Button
+        android:id="@+id/buttonPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="23dp"
+        android:onClick="goToVideoActivity"
+        android:text="Record Video" />
+
+    <Button
+        android:id="@+id/buttonExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonList"
+        android:layout_alignRight="@+id/buttonList"
+        android:layout_below="@+id/buttonList"
+        android:layout_marginTop="16dp"
+        android:onClick="exitApp"
+        android:text="Exit OnTheGo" />
+
+</RelativeLayout>

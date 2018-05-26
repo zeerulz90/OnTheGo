@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bluedroid"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/recordA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="performAction"
+        android:text="Start Record" />
+
+    <Button
+        android:id="@+id/stopA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="performAction"
+        android:text="Stop Record" />
+
+    <Button
+        android:id="@+id/playA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="performAction"
+        android:text="Start Playback" />
+
+    <Button
+        android:id="@+id/stopPlayback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="performAction"
+        android:text="Stop Playback" />
+
+    <Button
+        android:id="@+id/buttonGoBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="returnToMenu"
+        android:text="Return To Main Menu" />
+
+</LinearLayout>
